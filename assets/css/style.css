@@ -1,0 +1,242 @@
+html, body, main, header, footer,h1, h2, aside, section {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	background-color: #a4e3f9;
+	background-image:url('../img/background.svg');
+	background-position:center center;
+	background-size: cover;
+	font-family: 'gilroylight';
+	color:white;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+.color, footer{
+	height: 5vh;
+	width: 100vw;
+	background-color: #48a0bf;
+}
+
+header{
+	font-size: 2.5rem;
+	width: 100vw;
+    height: 25vh;
+}
+
+    h1, h2{
+        line-height: 1.25em;
+        font-family: 'league_spartanregular';
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 0.7em;
+        color: #48A0BF;
+        opacity: 0.5;
+    }
+
+section{
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+    height: 70vh;
+    width: 100vw;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+}
+
+    aside{
+        flex-basis: 35%;
+        padding: 0 0vw 0 6vw;
+        font-size: 1.2em;
+        overflow: hidden;
+    }
+
+    form{
+        text-align: center;
+    }
+
+.upload{
+    animation-name: zoneGlow;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    border: 1em dashed #48A0BF;
+    border-radius: 1em;
+    opacity: 0.5;
+    cursor: pointer;
+    height: 52vh;
+    transition: 0.5s;
+    min-width: 19vw;
+}
+
+.closeDoor{
+    transform-origin: center;
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+
+.moveDash{
+    min-width: 14vw;
+    transition: 0.5s;
+}
+
+.capsuleOpeningHide{
+    fill: #E6E6E6;
+    transition: 1.3s;
+}
+
+.inputMail{
+    min-width: 14vw;
+    padding: 5vh;
+    border: 1em dashed rgba(72, 160, 191, 0.5);
+    border-radius: 1em;
+    display: flex;
+    flex-flow: column;
+}
+
+.inputMail p{
+    font-family: 'league_spartanregular';
+    font-size: 0.8em;
+    margin: 0 0 0.25vh 0;
+    color: rgba(72, 160, 191, 0.75);
+}
+
+.inputText{
+    font-family: 'gilroylight';
+    margin-bottom: 5vh;
+    border-radius: 5px;
+    border: 1px solid #48A0BF;
+    padding: 0.75em;
+}
+
+footer{
+    
+}
+
+.opacity{
+    opacity: 0;
+    transition: 0.2s;
+}
+
+
+.hide{
+    display: none; 
+}
+
+
+svg{
+    position: absolute;
+    z-index: 0;
+}
+
+
+.borderUpLoad{
+    border: 1em solid  rgba(0, 0, 0, 0);
+
+}
+
+
+@keyframes zoneGlow{
+    0%{opacity:0.3;}
+    100%{opacity:0.5;} 
+}
+
+#capsuleDoor{
+    transform-origin: center;
+    transition: 0.5s;
+}
+
+
+.btnClassic{
+	background-color: #ff5738;
+	color: #fff;
+	font-family: 'league_spartanregular';
+	font-size: 1.2em;
+	padding: 10px 25px ;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btnClassic:hover{
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btnGrey{
+	background-color: #B8B8B8;
+	color: #fff;
+	font-family: 'league_spartanregular';
+	font-size: 1em;
+	padding: 7px 25px ;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+	text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.btnGrey:hover{
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.3);
+    transition: 0.3s;
+}
+
+.btnDisabled{
+    background-color: #C8C8C8
+}
+
+.btnDisabled:hover{
+    background-color: #C8C8C8
+}
+
+.inputNotValid{
+    color:#FF9E38 !important;
+}
+.inputValid{
+    color:#80D808 !important;
+}
+
+.zoneInputNotValid{
+    border:1px solid #FF9E38;
+}
+
+.zoneInputValid{
+    border:1px solid #80D808;
+}
+
+
+.capsuleMove{
+    transform-origin: center ;
+    animation-name: animCapsuleMove;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes animCapsuleMove{
+    0%{transform: rotate(0deg) translateY(0vw) translateX(0vh);}
+    25%{transform: rotate(90deg) translateY(-10vw) translateX(5vh);}
+    100%{transform: rotate(90deg) translateY(-35vw) translateX(5vh);}
+}
+
+
+

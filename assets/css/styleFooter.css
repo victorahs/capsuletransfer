@@ -1,0 +1,21 @@
+footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    margin: 0.5vw;
+    color: #ffffff;
+    opacity: 0.4;
+    
+}
+
+#footerIconsZone{
+    display: flex;
+    margin-right: 0.5vw;
+}
+
+.footerIcons img{
+    margin: 0.5vh;
+    width: 1.8vw;
+}

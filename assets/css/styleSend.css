@@ -1,0 +1,198 @@
+html, body, main, header, footer,h1, h2, aside, section, p {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+main{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+
+	background-color: #a4e3f9;
+	background-image:url('../img/background.svg');
+	background-position:center center;
+	background-size: cover;
+	font-family: 'gilroylight';
+	color:white;
+
+	width: 100vw;
+	height: 100vh;
+}
+
+.color, footer{
+	height: 5vh;
+	width: 100vw;
+    background-color: #48a0bf;
+}
+
+section{
+    display: flex;
+    flex-basis: 58%;
+    justify-content: space-between;
+    text-align: center;
+    margin:0;
+    height: 75vh;
+}
+
+aside{
+    align-self: center;
+    width: 30vw;
+    padding: 1vw 1vh;
+}
+
+label{
+    align-self: center;
+}
+
+footer{
+}
+
+header{
+    font-size: 2.5rem;
+    width: 100vw;
+    height: 20vh;
+}
+
+h1, h2{
+    line-height: 1.25em;
+    font-family: 'league_spartanregular';
+	text-transform: uppercase;
+	text-align: center;
+}
+
+h2{
+    font-size: 0.7em;
+    color: #48A0BF;
+    opacity: 0.5;
+}
+
+.hide{
+    display: none;
+}
+
+svg{
+    position: absolute;
+    z-index: 0;
+}
+
+.upload{
+    animation-name: zoneGlow;
+    animation-duration: 0.8s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    z-index: 1;
+    border: 1em dashed #48A0BF;
+    border-radius: 1em;
+    opacity: 0.5;
+    cursor: pointer;
+    width: 14vw;
+    height: 50vh;
+    padding-top: 2vh;
+    margin-bottom: 4vh;
+}
+
+
+@keyframes zoneGlow{
+    0%{opacity:0.3;}
+    100%{opacity:0.5;} 
+}
+
+#capsuleDoor{
+    transform-origin: center;
+    transition: 0.5s;
+}
+
+.closeDoor{
+    transform-origin: center;
+    transform: rotateY(180deg);
+    transition: 0.5s;
+}
+
+.btnClassic{
+    background-color: #ff5738;
+    color: #fff;
+    font-family: 'league_spartanregular';
+    font-size: 1.2em;
+    padding: 10px 25px ;
+    border:0 none;
+    cursor:pointer;
+    -webkit-border-radius: 5px;
+    border-radius: 5px; 
+    text-transform: uppercase;
+    z-index: 10;
+    
+}
+.btnClassic:hover{
+    box-shadow: 1px 1px 6px 0px rgba(0,0,0,0.3);
+    transition: 0.3s;
+    z-index: 10;
+}
+
+
+#mainFinal{
+    height: 75vh;
+    width: 100vw;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+#mainFinal div {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    z-index: 1
+}
+
+#textZone{
+    padding: 0.7rem;
+    width: 30%;
+    font-size: 2.7rem;
+    color: #48A0BF;
+    opacity: 0.5;
+    font-family: 'league_spartanregular';
+    text-align: center;
+
+    height: 20vh;
+
+}
+a, a:hover, a:active, a:focus{
+    text-decoration: none;
+}
+.text{
+    line-height: 2.5em;
+    font-family: 'league_spartanregular';
+    text-transform: uppercase;
+    color: rgba(72, 160, 191, 0.75);
+/*    opacity: 0.5;*/
+    text-align: center;
+}
+.textBasMarge{
+    margin-top: 13em;
+    margin-bottom: 3em; 
+}
+
+.inputUrl{    
+    width: 47em;
+    font-family: 'gilroylight';
+    border-radius: 5px;
+    border: 1px solid #48A0BF;
+    padding: 0.75em;
+    margin-top: 1em;
+}
+
+@media screen and (min-width: 1400px){
+    /*ecrn sup à 640px*/
+
+    #mainFinal{   
+        justify-content: space-around;
+    }
+
+}

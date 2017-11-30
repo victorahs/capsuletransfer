@@ -1,0 +1,47 @@
+#capsuleFinal{
+	margin: auto;
+
+	animation: trajectoire 3s ease-out 0.2s;
+	transform: rotate(180deg);
+
+	animation-fill-mode: forwards;
+
+	transform-origin: 50% 50%;
+
+}
+
+#tubeComplet{
+	transform: translate(200rem,0);
+}
+
+@keyframes trajectoire {
+	0% {transform: translate(-100rem,0); }
+	10% {transform: translate(0rem,0) ;}
+	90% {transform: translate(0rem,0) ;}
+	100% {transform: translate(200rem,0) ;}
+
+}
+
+
+#vibrationCapsule {
+	animation: vibration 0.1s linear 0.2s infinite;
+	transform-origin: 50% 50%;
+}
+
+@keyframes vibration {
+	0% {transform: rotate(-1deg); }
+	50% {transform: rotate(1deg);}
+	100% {transform: rotate(-1deg);}
+
+}
+
+
+#jointD, #jointL{
+	animation: passage 1s linear infinite;
+}
+
+@keyframes passage {
+	0% {transform: translate(300rem,0); }
+	100% {transform: translate(-300rem,0) ;}
+
+}
